@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>SaveMoney - Conta</title>
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="../Paginainicio/index.html"> <img src="../Logo-Save-Money.png" class="savemoney"></a>
+    </div>
+
+    
+    
+    <div class="modal">
+
+
+
+
+
+        
+    </div>
+    
+
+    
+    
+    
+    
+    <div class="alterarInfoUser">
+        
+        <button class="AlterarSenha" onclick="abrirModal()">Alterar senha</button>
+        
+
+            <button class="excluiConta" onclick="temCerteza()">Excluir Conta</button>
+
+            <style>
+
+                .excluiConta
+                {
+                    border: none;
+                    outline: none;
+                    position:absolute;
+                    top: 90%;
+                    left: 86%;
+                    border-radius: 30px;
+                    padding: 8px;
+                    background-color: rgb(211, 45, 34);
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    cursor: pointer;
+                    
+
+
+
+                }
+
+
+
+            </style>
+        
+        <div id="infouser" class="infouser">
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="modalAltera" id="modalAltera">
+            
+            <img class="fechar" src="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/__geKiQnSG-.png" id="u_2_9_rd" onclick="fecharModal()" style="position:absolute; top: 7%; left: 87%; cursor: pointer; ">
+
+            <br><br>
+
+            <center><label>Editar Senha</label> <br><br></center>
+
+            <center><input type="password" class="inputsenha" id="senha" placeholder="Digite sua nova senha!"  ></center>
+            <br>
+            <center><input type="password" class="inputsenha" id="confirmaSenha"  placeholder="Confirme a senha!" ></center>
+            
+            <br>   
+            <center><button class="inputBtn" onclick="alterarSenha()" >Enviar</button></center>
+
+
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+html {
+    height: 120%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 200%;
+    background-image: url(backPagina-inicial.png);
+    background-repeat: no-repeat;
+    background-color: #e7e9dd;
+    background-size: contain;
+}
+
+.header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(168, 192, 140, 1) 0%, rgba(106, 162, 117, 1) 100%);
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    position: fixed;
+}
+
+.savemoney {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    top: 4px;
+    position: fixed;
+}
+
+.iconeconfig {
+    cursor: pointer;
+    width: 25px;
+    left: 97.6%;
+    top: 14px;
+    position: fixed;
+    border-radius: 30px;
+    padding: 3px;
+    filter: invert()
+}
+
+.menuConfig {
+    width: 150px;
+    height: 90px;
+    left: 88%;
+    border-radius: 0px 0px 20px 20px;
+    top: 55px;
+    display: none;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 5.5px 10px 4px rgba(0, 0, 0, 0.288);
+}
+
+.iconeUser {
+    position: relative;
+    top: -43px;
+    left: 32px;
+}
+
+.textoconfig {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    top: 15px;
+    left: 7px;
+    text-decoration: none;
+    position: relative;
+}
+
+.textoconfigAjuda {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    top: -50px;
+    left: 7px;
+    text-decoration: none;
+    position: relative;
+}
+
+.iconeSair {
+    position: relative;
+    top: -50px;
+    left: 35px;
+}
+
+.textoconfigSair {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    top: -30px;
+    left: 6px;
+    text-decoration: none;
+}
+
+.comecar {
+    position: relative;
+    top: 500px;
+    left: 40px;
+}
+
+.comecar {
+    background-color: rgb(131, 163, 112);
+    border: none;
+    outline: none;
+    margin-top: 2vh;
+    width: 17vh;
+    height: 5vh;
+    border-radius: 5vh;
+    color: white;
+    top: 390px;
+    left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    cursor: pointer;
+    position: relative;
+}
+
+.comecar:hover {
+    opacity: 0.9;
+}
+
+scroll-page {
+    position: relative;
+    top: 850px;
+}
+
+.roll {
+    position: relative;
+    top: 800px;
+}
+
+.criarMeta {
+    height: 600px;
+    width: 80%;
+    border-radius: 50px;
+    left: 10%;
+    background-color: white;
+    top: 855px;
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+@keyframes menuConfig {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.menuConfig {
+    animation: menuConfig .3s;
+}
+
+.IconAdd {
+    position: relative;
+    width: 60px;
+    left: 6%;
+    top: 13%;
+    cursor: pointer;
+}
+
+.IconAdd:hover {
+    opacity: 0.9;
+    width: 62px;
+}
+
+.cantoMeta {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(168, 192, 140, 1) 0%, rgba(106, 162, 117, 1) 100%);
+    width: 30%;
+    height: 700px;
+    border-radius: 50px;
+    left: 70%;
+    top: -9.1%;
+    position: relative;
+}
+
+.Addfoto {
+    position: relative;
+    width: 100px;
+    left: 67%;
+    top: -65%;
+    border-radius: 30px;
+    border: 5px solid rgb(207, 207, 207);
+    background-color: rgb(207, 207, 207);
+}
+
+#file {
+    display: none;
+}
+
+#uploadBtn {
+    height: 20px;
+    width: 100px;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 67%;
+    top: 65%;
+    bottom: 0;
+    text-align: center;
+    background: rgb(131, 163, 112);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#uploadBtn:hover {
+    opacity: 0.9;
+}
+
+.opcMetas {
+    position: relative;
+    left: 30%;
+    top: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.opcMetas {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 35%;
+    height: 55%;
+    left: 20%;
+    border: 3px solid rgb(131, 163, 112);
+    top: 15%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 30px;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.close {
+    position: relative;
+    left: 89%;
+    top: -75px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes opcMetas {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.opcMetas {
+    animation: opcMetas .3s;
+}
+
+.opcMetas label {
+    position: relative;
+    left: 10%;
+}
+
+.opcMetas input {
+    position: relative;
+    left: 10%;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.opcMetas h1 {
+    top: -100px;
+    position: relative;
+    padding-left: 10%;
+}
+
+.enviarMetabtn {
+    position: absolute;
+    top: 84%;
+    left: 10%;
+    border: none;
+    background-color: rgb(131, 163, 112);
+    border-radius: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.enviarMetabtn:hover {
+    opacity: 0.9;
+}
+
+.textoMetaAdd {
+    position: relative;
+    top: -26%;
+}
+
+.inpMetaAdd {
+    position: absolute;
+    top: -24%;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.textoMetaPreco {
+    position: absolute;
+    top: -18%;
+}
+
+.addPreco {
+    position: absolute;
+    top: -16%;
+    outline: none;
+    appearance: none;
+    margin: 0;
+}
+
+.textoMetaSite {
+    position: absolute;
+    top: -10%;
+}
+
+.siteProdoClass {
+    position: absolute;
+    top: -8%;
+    outline: none;
+}
+
+.swal2-popup {
+    font-family: Georgia, serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+}
+
+.alterarMeta {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 68%;
+    left: 62%;
+    background-color: rgb(238, 238, 238);
+    display: none;
+    border-radius: 30px;
+    border: 2px solid rgb(131, 163, 112);
+}
+
+.excluirMeta {
+    display: none;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(131, 163, 112);
+    position: absolute;
+    border-radius: 30px;
+    top: 63%;
+    left: 49.5%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.swal2-popup {
+    border-radius: 30px;
+}
+
+
+.btnExcluiMeta
+{
+    border: none;
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: rgb(131, 163, 112);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    top: 63%;
+    left: 30%;
+    padding: 10px;
+    display: none;
+
+}

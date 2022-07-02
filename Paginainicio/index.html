@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveMoney - Início</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#topo1"> <img src="../Logo-Save-Money.png" class="savemoney"></a>
+
+        <img src="Icones/definicoes.png" onclick="mostrarConfigs()" class="iconeconfig">
+
+        <div class="menuConfig" id="menuConfigss">
+
+            <center><a class="textoconfig" href="../Conta/index.html">Conta</a></center><br><br>
+
+
+            <a href="../Conta/index.html"><img src="Icones/avatar.png" width="22px" class="iconeUser"></a>
+
+
+            <center><a class="textoconfigSair" href="../telalogin/TELADELOGIN/index.html">Sair</a></center>
+
+
+            <a href="../telalogin/TELADELOGIN/index.html"><img src="Icones/sair.png" width="22px" class="iconeSair"></a>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="topoall">
+
+        <div id="topo1" class="topo">
+
+            <br><br><br>
+
+            <a href="#pagina2"><button class="comecar">Começar</button></a>
+        </div>
+    </div>
+
+
+
+    <div id="pagina2" class="roll"></div>
+
+
+
+    <div class="criarMeta">
+        <img src="Icones/51537.png" class="IconAdd" id="idAdd">
+
+        <div class="opcMetas" id="opcMetas">
+
+            <span> <img class="close" src="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/__geKiQnSG-.png" id="u_2_9_rd"></span>
+
+            <h1>Adicionar Produto</h1>
+
+
+            <label class="textoMetaAdd">Nome do produto</label><br>
+            <input class="inpMetaAdd" type="text" id="adicionarProduto"><br>
+
+            <label class="textoMetaPreco">Preço do produto</label><br>
+            <input class="addPreco" type="number" id="adicionarPreçoProduto" min="0"><br>
+            <label class="textoMetaSite">Site do Produto</label><br>
+            <input class="siteProdoClass" type="text" id="siteProduto"><br>
+            <br>
+
+            <img src="Icones/camera-fotografica.png" id="Addfoto" class="Addfoto">
+            <input type="file" id="file">
+            <label for="file" class="uploadBtn1" id="uploadBtn">Selecione a foto</label>
+
+
+            <button class="enviarMetabtn" onclick="criaMeta()">Adicionar Produto</button>
+
+        </div>
+
+
+
+        <div id="mostrarNome" class="Textodametacriada"></div>
+        <div id="mostrarPreco" class="TextodametacriadaPreco"></div>
+
+
+        <button onclick="temCerteza()" id="excluirMeta" class="excluirMeta">Excluir</button>
+
+
+        
+        
+        
+        <div id="Progress_Status">
+            <div id="myprogressBar"></div>
+            
+        </div>
+        <button onclick="update()" id="btnExcluiMeta" class="btnExcluiMeta" >Concluir meta!</button>
+
+        <img src="Icones/quadrado-branco.jpg" id="fotoProduto" class="fotoprod">
+
+
+
+        <button id="alteraMetaBtn" class="alteraMetaBtn" onclick="alteraMeta()">Alterar Meta</button>
+
+        <div id="alterarAsMeta" class="alterarMeta">
+            <img class="closeAltera" src="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/__geKiQnSG-.png" onclick="fecharModalAlterar()">
+
+
+            <label class="NomeAlterarMeta">Alterar nome</label>
+
+            <input type="text" class="AlteraNomeMeta" id="AlteraNomeMeta">
+
+            <label class="ValorAlterarMeta">Alterar valor</label>
+
+            <input type="text" class="AlteraValorMeta" id="AlteraValorMeta">
+
+            <label class="LinkAlterarMeta">Alterar link</label>
+
+            <input type="text" class="AlteraLinkMeta" id="AlteraLinkMeta">
+
+
+            <label style="left:175px; top: 100px " for="file" id="uploadBtn">Selecione a foto</label>
+
+            <button class="EnviarAlterarMeta" onclick="EnviarAlterarMeta()">Enviar</button>
+
+
+        </div>
+
+        <style>
+            .EnviarAlterarMeta {
+                position: absolute;
+                left: 75%;
+                top: 77%;
+                background-color: rgb(131, 163, 112);
+                outline: none;
+                border: none;
+                border-radius: 30px;
+                padding: 10px;
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+            }
+            
+            .fotoTrocar {
+                position: relative;
+                left: 30px;
+            }
+            
+            .NomeAlterarMeta {
+                font-family: 'Montserrat', sans-serif;
+                position: relative;
+                top: 15px;
+                font-size: 14px;
+            }
+            
+            .AlteraNomeMeta {
+                border: none;
+                outline: none;
+                padding: 10px;
+                width: 120px;
+                border-radius: 30px;
+                position: relative;
+                top: 50px;
+                left: -108px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            .ValorAlterarMeta {
+                font-family: 'Montserrat', sans-serif;
+                position: relative;
+                top: 50px;
+                left: 30px;
+                font-size: 14px;
+            }
+            
+            .AlteraValorMeta {
+                border: none;
+                outline: none;
+                padding: 10px;
+                width: 120px;
+                border-radius: 30px;
+                position: relative;
+                top: 90px;
+                left: -70px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            .LinkAlterarMeta {
+                font-family: 'Montserrat', sans-serif;
+                position: relative;
+                top: -20px;
+                left: -65px;
+                font-size: 13.5px;
+            }
+            
+            .AlteraLinkMeta {
+                border: none;
+                outline: none;
+                padding: 10px;
+                width: 100px;
+                border-radius: 30px;
+                position: relative;
+                top: -23px;
+                left: 170px;
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+        <button onclick="abrirLink()" class="btnLink" id="linkUsuario">Site do produto</button>
+
+
+    </div>
+
+
+    </div>
+
+
+    <style>
+        .closeAltera {
+            position: relative;
+            left: 90%;
+            top: 5%;
+        }
+        
+        .alteraMetaBtn {
+            display: none;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: rgb(131, 163, 112);
+            position: absolute;
+            border-radius: 30px;
+            top: 63%;
+            left: 19%;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .fotoprod {
+            width: 270px;
+            position: absolute;
+            left: 64%;
+            top: 20%;
+            display: none;
+            border: 2px solid rgb(131, 163, 112);
+        }
+        
+        .btnLink {
+            border: none;
+            outline: none;
+            background-color: rgb(131, 163, 112);
+            color: white;
+            border-radius: 30px;
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            top: 63%;
+            left: 6%;
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        .Textodametacriada {
+            position: absolute;
+            left: 6%;
+            top: 20%;
+            color: rgb(131, 163, 112);
+            font-size: 90px;
+            font-family: 'Montserrat', sans-serif;
+            display: block;
+        }
+        
+        .TextodametacriadaPreco {
+            position: absolute;
+            left: 6%;
+            top: 37%;
+            color: rgb(131, 163, 112);
+            font-size: 70px;
+            font-family: 'Montserrat', sans-serif;
+            display: block;
+        }
+        
+        #Progress_Status {
+            width: 50%;
+            background-color: #ddd;
+            display: none;
+            position: relative;
+            top: 55%;
+            left: 6%;
+            border-radius: 5px 30px 30px 5px;
+        }
+        
+        #myprogressBar {
+            width: 0%;
+            height: 35px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 32px;
+            color: black;
+            position: relative;
+            top: 30%;
+            left: 0%;
+            border-radius: 5px 30px 30px 5px;
+        }
+    </style>
+    <script>
+        function update() {
+            var element = document.getElementById("myprogressBar");
+            var width = 1;
+            var identity = setInterval(scene, 10);
+            Swal.fire({
+        delay: 1000,
+        position: 'center',
+        icon: 'success',
+        title: 'Parabéns, Sua meta foi concluida!!',
+        showConfirmButton: false,
+        timer: 2500,
+
+    })
+
+    const IconAdd = document.getElementById("idAdd")
+    const BarraPro = document.getElementById("Progress_Status")
+    const textoMeta = document.getElementById("Textodametacriada")
+    const botaoLink = document.getElementById("linkUsuario")
+    const fotoProduto = document.getElementById("fotoProduto")
+    const monstrarNome = document.getElementById("mostrarNome")
+    const monstrarPreco = document.getElementById("mostrarPreco")
+
+    const excluirMeta = document.getElementById("excluirMeta")
+    const btnExcluiMeta = document.getElementById("btnExcluiMeta")
+
+
+
+    modal.style.display = "none"
+    IconAdd.style.display = "block"
+    BarraPro.style.display = "none"
+    botaoLink.style.display = "none"
+    fotoProduto.style.display = "none"
+    alteraMetaBtn.style.display = "none"
+    monstrarNome.style.display = "none"
+    monstrarPreco.style.display = "none"
+    excluirMeta.style.display = "none"
+    btnExcluiMeta.style.display = "none"
+    
+
+            function scene() {
+                if (width >= 100) {
+                    clearInterval(identity);
+                } else {
+                    width++;
+                    element.style.width = width + '%';
+                }
+            }
+        }
+    </script>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+body {
+    background-image: url(PAGINA-LOGIN_background2.png);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e7e9dd;
+    
+   
+}
+
+.area-login {
+    height: 100vh;
+}
+
+.login {
+    background-color: white;
+    width: 30vh;
+    height: 25vh;
+    border-radius: 4vh;
+    padding: 5vh;
+    left: 145vh;
+    top: 25vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login input {
+    position: relative;
+    margin-top: 1vh;
+    color: #a7a7a7;
+    background-color: #f2f2f2;
+    border: none;
+    height: 6vh;
+    border-radius: 50vh;
+    outline: none;
+    padding-left: 2vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    margin-top: 1.7vh;
+    
+}
+
+.login input {
+    color: #a7a7a7;
+}
+
+.login input::placeholder {
+    color: #a7a7a7;
+    font-size: 2.2vh;
+}
+
+.login label {
+    color: #5a5a5a;
+    font-size: 4vh;
+    position: relative;
+    top: -1vh;
+}
+
+.login button {
+    background-color: #aab574;
+    border: none;
+    outline: none;
+    margin-top: 2vh;
+    width: 17vh;
+    height: 5vh;
+    border-radius: 5vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    cursor: pointer;
+    position: fixed;
+    left: 157.7vh;
+    top: 52.3vh;
+    }
+
+.cadastro {
+    background-image: linear-gradient(to bottom, #d4daa2 20%, #6a8c69);
+    width: 40vh;
+    height: 22vh;
+    border-radius: 4vh;
+    left: 145vh;
+    top: 15vh;
+    border: none;
+    position: relative;
+}
+
+.cadastro label {
+    left: 0vh;
+    top: 11vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+ 
+.inputCAD {
+    color: #a7a7a7;
+}
+
+.inputCAD::placeholder {
+    color: #a7a7a7;
+    font-size: 2.0vh;
+}
+
+.swal2-popup {
+    font-family: Georgia, serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+    
+}
+
+
